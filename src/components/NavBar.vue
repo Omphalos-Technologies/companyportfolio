@@ -43,10 +43,10 @@ function isActiveLink(routePath) {
                                 </span>
                             </RouterLink>
                             <RouterLink to="/about-us" class="relative px-3 py-4 text-cloud-white  transition-colors duration-300"
-                                :class="isActiveLink('/news') ? 'text-golden-honey font-bold' : 'hover:text-golden-honey'">
+                                :class="isActiveLink('/about-us') ? 'text-golden-honey font-bold' : 'hover:text-golden-honey'">
                                 About Us
                                 <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-golden-honey transition-transform duration-300 ease-in-out origin-left scale-x-0"
-                                    :class="{ 'scale-x-100': isActiveLink('/news'), 'group-hover:scale-x-100': !isActiveLink('/news') }">
+                                    :class="{ 'scale-x-100': isActiveLink('/about-us'), 'group-hover:scale-x-100': !isActiveLink('/about-us') }">
                                 </span>
                             </RouterLink>
                         </div>
