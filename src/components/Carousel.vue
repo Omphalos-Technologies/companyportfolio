@@ -16,37 +16,46 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="bg-deep-purple py-20 px-6">
+  <section class="bg-black py-20 px-6 scroll-smooth">
     <div 
       id="default-carousel" 
       class="relative mx-auto w-full max-w-[1400px]" 
       data-carousel="slide" 
       ref="carouselElement"
+
     >
       <!-- Carousel wrapper -->
       <div class="relative h-80 md:h-[500px] overflow-hidden rounded-lg shadow-lg">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img 
-            src="@/assets/img/call_of_duty.webp" 
+            src="@/assets/img/bigflappy.png" 
             class="w-full h-full object-cover" 
-            alt="Call of Duty"
+            alt="Big Flappy"
           >
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img 
-            src="@/assets/img/ghostOfTsushima.jpg" 
+            src="@/assets/img/hiluxlatest.png" 
             class="w-full h-full object-cover" 
-            alt="Ghost of Tsushima"
+            alt="Hilux Car Simulator"
           >
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img 
-            src="@/assets/img/godOfWar.webp" 
+            src="@/assets/img/onehour.png" 
             class="w-full h-full object-cover" 
-            alt="God of War"
+            alt="One Hour"
+          >
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img 
+            src="@/assets/img/streetracer.png" 
+            class="w-full h-full object-cover" 
+            alt="Street Racer"
           >
         </div>
       </div>
@@ -56,6 +65,7 @@ onMounted(() => {
         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
       </div>
 
       <!-- Slider controls -->

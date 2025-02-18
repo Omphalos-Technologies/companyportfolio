@@ -16,8 +16,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <section class="bg-cloud-white py-20 px-6">
-        <h3 class="font-bold text-3xl py-10 text-center">
+    <section class="bg-black py-20 px-6 scroll-smooth" >
+        <h3 class="font-bold text-3xl py-10 text-center text-cloud-white">
             Upcoming Games
         </h3> <br>
         <div 
@@ -28,30 +28,38 @@ onMounted(() => {
         >
           <!-- Carousel wrapper -->
           <div class="relative h-80 md:h-[500px] overflow-hidden rounded-lg shadow-lg">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img 
-                src="@/assets/img/call_of_duty.webp" 
-                class="w-full h-full object-cover" 
-                alt="Call of Duty"
-              >
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img 
-                src="@/assets/img/ghostOfTsushima.jpg" 
-                class="w-full h-full object-cover" 
-                alt="Ghost of Tsushima"
-              >
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img 
-                src="@/assets/img/godOfWar.webp" 
-                class="w-full h-full object-cover" 
-                alt="God of War"
-              >
-            </div>
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img 
+            src="@/assets/img/bigflappy.png" 
+            class="w-full h-full object-cover" 
+            alt="Big Flappy"
+          >
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img 
+            src="@/assets/img/hiluxlatest.png" 
+            class="w-full h-full object-cover" 
+            alt="Hilux Car Simulator"
+          >
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img 
+            src="@/assets/img/onehour.png" 
+            class="w-full h-full object-cover" 
+            alt="One Hour"
+          >
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img 
+            src="@/assets/img/streetracer.png" 
+            class="w-full h-full object-cover" 
+            alt="Street Racer"
+          >
+        </div>
           </div>
 
           <!-- Slider indicators -->
@@ -59,6 +67,7 @@ onMounted(() => {
             <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
           </div>
 
           <!-- Slider controls -->
