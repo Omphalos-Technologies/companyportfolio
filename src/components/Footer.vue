@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 <template>
     
 
-<footer class="bg-black">
+<footer class="bg-black pt-10">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
