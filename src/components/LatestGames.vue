@@ -3,11 +3,14 @@ import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import Card from './Card.vue';
 
-// Define game data
+// Import images directly
+import hiluxSim from '@/assets/img/hiluxlatest.png';
+import flappyBird from '@/assets/img/bigflappy.png';
+
+// Define game data with imported images
 const games = ref([
-    { id: 1, title: "Hilux Simulator", image: require('@/assets/img/Hilux-car-sim2.png') },
-    { id: 2, title: "Little Flappy Bird", image: require('@/assets/img/bigflappy.png') },
-    
+    { id: 1, title: "Hilux Simulator", image: hiluxSim },
+    { id: 2, title: "Little Flappy Bird", image: flappyBird },
 ]);
 
 // Active game state (default to first game)
@@ -19,6 +22,7 @@ const setActiveGame = (game) => {
 };
 </script>
 
+
 <template>
     <section class="bg-black py-4 scroll-smooth" >
         <h3 class="font-bold text-3xl py-10 text-center text-cloud-white">Latest Games</h3>
@@ -26,7 +30,7 @@ const setActiveGame = (game) => {
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
             <!-- Large Card (Left) -->
             <div class="md:col-span-2 item">
-                <Card :bg="'bg-[url(' + activeGame.image + ')]'">
+                <Card :style="{ backgroundImage: 'url(' + activeGame.image + ')' }">
                     <div class="flex flex-col h-full">
                         <div class="flex justify-between items-center mt-auto mb-4">
                             <p class="font-bold text-cloud-white text-xl">{{ activeGame.title }}</p>
