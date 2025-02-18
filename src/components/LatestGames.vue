@@ -5,10 +5,9 @@ import Card from './Card.vue';
 
 // Define game data
 const games = ref([
-    { id: 1, title: "Call of Duty", image: "@/assets/img/call_of_duty.webp" },
-    { id: 2, title: "Ghost of Tsushima", image: "@/assets/img/ghostOfTsushima.jpg" },
-    { id: 3, title: "God of War", image: "@/assets/img/godOfWar.webp" },
-    { id: 4, title: "Red Dead Redemption 2", image: "@/assets/img/red_dead_redemption.jpg" }
+    { id: 1, title: "Hilux Simulator", image: require('@/assets/img/Hilux-car-sim2.png') },
+    { id: 2, title: "Little Flappy Bird", image: require('@/assets/img/bigflappy.png') },
+    
 ]);
 
 // Active game state (default to first game)

@@ -28,23 +28,7 @@ onMounted(() => {
         >
           <!-- Carousel wrapper -->
           <div class="relative h-80 md:h-[500px] overflow-hidden rounded-lg shadow-lg">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img 
-            src="@/assets/img/bigflappy.png" 
-            class="w-full h-full object-cover" 
-            alt="Big Flappy"
-          >
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img 
-            src="@/assets/img/hiluxlatest.png" 
-            class="w-full h-full object-cover" 
-            alt="Hilux Car Simulator"
-          >
-        </div>
-        <!-- Item 3 -->
+          <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img 
             src="@/assets/img/onehour.png" 
