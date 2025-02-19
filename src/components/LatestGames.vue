@@ -30,7 +30,7 @@ const setActiveGame = (game) => {
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
             <!-- Large Card (Left) -->
             <div class="md:col-span-2 item">
-                <Card :style="{ backgroundImage: 'url(' + activeGame.image + ')' }">
+                <Card :style="{ backgroundImage: 'url(' + activeGame.image + ')', backgroundSize: 'contain', backgroundPosition: 'center', height: '500px' }">
                     <div class="flex flex-col h-full">
                         <div class="flex justify-between items-center mt-auto mb-4">
                             <p class="font-bold text-cloud-white text-xl">{{ activeGame.title }}</p>
@@ -43,15 +43,14 @@ const setActiveGame = (game) => {
             </div>
 
             <!-- Small Cards (Right) -->
-            <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-6">
                 <Card 
                     v-for="game in games" 
                     :key="game.id" 
-                    :bg="'bg-[url(' + game.image + ')]'"
-                    class="cursor-pointer transition-transform transform hover:scale-105"
+                    :style="{ backgroundImage: 'url(' + game.image + ')', backgroundSize: 'cover', backgroundPosition: 'center right', width: '80%', height: '150px' }"
+                    class="cursor-pointer transition-transform transform hover:scale-105 mx-auto"
                     @mouseover="setActiveGame(game)"
                     @click="setActiveGame(game)"
-                    height="h-"
                 >
                     <div class="flex flex-col h-full">
                         <p class="font-bold text-cloud-white text-sm p-2">{{ game.title }}</p>
